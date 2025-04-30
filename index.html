@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anitha Tangirala | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      display: flex;
+      height: 100vh;
+      background: #1e1f26;
+      color: #ffffff;
+    }
+
+    .sidebar {
+      width: 35%;
+      min-width: 280px;
+      background: #23232f;
+      padding: 40px 20px;
+      position: fixed;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-right: 2px solid #3e4c59;
+    }
+
+    .sidebar h1 {
+  font-size: 2.5rem;
+  background: linear-gradient(to right, #d16ba5, #86a8e7, #5ffbf1); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #5ffbf1; 
+  text-shadow: 0 0 5px rgba(95, 251, 241, 0.5); 
+}
+
+    .sidebar p {
+      font-size: 1rem;
+      color: #cbd5e1;
+    }
+
+    .nav {
+      margin-top: 30px;
+    }
+
+    .nav a {
+      display: block;
+      color: #5ffbf1;
+      margin: 15px 0;
+      text-decoration: none;
+      font-weight: 600;
+      position: relative;
+    }
+
+    .nav a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      left: 0;
+      bottom: -3px;
+      background-color: #5ffbf1;
+      transition: width 0.3s ease;
+    }
+
+    .nav a:hover::after {
+      width: 100%;
+    }
+
+    .contact {
+      font-size: 0.9rem;
+      color: #94a3b8;
+    }
+
+    .main {
+      margin-left: 35%;
+      width: 65%;
+      padding: 40px;
+      overflow-y: auto;
+    }
+
+    section {
+      margin-bottom: 60px;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      color: #86a8e7;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #3e4c59;
+      padding-bottom: 10px;
+    }
+
+    section p, ul li {
+      font-size: 1rem;
+      margin-bottom: 10px;
+      color: #e2e8f0;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    a {
+      color: #5ffbf1;
+    }
+
+    table {
+      width: 100%;
+      margin-top: 10px;
+      border-collapse: collapse;
+    }
+
+    table th, table td {
+      border: 1px solid #3e4c59;
+      padding: 10px;
+      text-align: left;
+    }
+
+    table th {
+      background: #2a2b3d;
+      color: #5ffbf1;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    form input, form textarea {
+      margin: 10px 0;
+      padding: 10px;
+      background: #2c2e3e;
+      border: 1px solid #3e4c59;
+      border-radius: 5px;
+      color: #fff;
+    }
+
+    form button {
+      padding: 10px;
+      background: linear-gradient(to right, #d16ba5, #86a8e7);
+      color: #1e1f26;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.03);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+      .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 2px solid #3e4c59;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .nav a {
+        margin: 0 10px;
+      }
+      .main {
+        margin: 0;
+        width: 100%;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <div>
+      <h1>Anitha Tangirala</h1>
+      <p>AI/ML Enthusiast | Data Analytics</p>
+      <div class="nav">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+    <div class="contact">
+      <p>Email: anithatangirala111@gmail.com</p>
+      <p>Phone: +91 7815839132</p>
+      <p>GitHub: <a href="https://github.com/AnithaTangirala" target="_blank">AnithaTangirala</a></p>
+    </div>
+  </div>
+
+  <div class="main">
+    <section id="about" class="card">
+      <h2>About Me</h2>
+      <p>I'm an aspiring AI/ML engineer passionate about building intelligent systems that solve real-world problems. With a strong foundation in data analytics, programming, and continuous learning, I aim to contribute meaningfully to innovative tech-driven environments.</p>
+    </section>
+
+    <section id="education" class="card">
+      <h2>Education</h2>
+      <table>
+        <tr><th>Qualification</th><th>Year</th><th>Institute</th><th>Marks</th></tr>
+        <tr><td>B.Tech CSE (AIML)</td><td>2026</td><td>NEC College</td><td>87%</td></tr>
+        <tr><td>Intermediate</td><td>2022</td><td>Vikas Junior College</td><td>95%</td></tr>
+        <tr><td>SSC</td><td>2020</td><td>Hindu High School</td><td>96%</td></tr>
+      </table>
+    </section>
+
+    <section id="skills" class="card">
+      <h2>Skills</h2>
+      <ul>
+        <li>💻 <strong>Languages:</strong> Python, C, HTML, CSS, Java</li>
+        <li>🛠️ <strong>Tools:</strong> GitHub, VS Code, Anaconda, PowerBI, Tableau</li>
+        <li>📚 <strong>Concepts:</strong> DSA, OOP, OS, DBMS, CN</li>
+        <li>📜 <strong>Certifications:</strong> IBM AI, Microsoft GenAI, MySQL, Agile</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="card">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Car Price Prediction:</strong> Linear Regression – <a href="#">GitHub</a></li>
+        <li><strong>Medical Insurance Prediction:</strong> Linear Regression – <a href="#">GitHub</a></li>
+          <li><strong>Heart Disease Prediction:</strong> Logistic regression & EDA. <a href="#">GitHub</a></li>
+          <li><strong>Rock VS Mine Prediction:</strong> Logistic regression & EDA.<a href="#">GitHub</a></li>
+        </ul>
+      </section>
+  
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+          <input type="text" placeholder="Your Name" />
+          <input type="email" placeholder="Your Email" />
+          <textarea rows="4" placeholder="Your Message"></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </div>
+  </body>
+  </html>
